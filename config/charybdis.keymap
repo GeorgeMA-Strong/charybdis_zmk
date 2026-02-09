@@ -1,10 +1,10 @@
-#include "keys_de_swiss.h"
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/modifiers.h>
 #include <dt-bindings/zmk/pointing.h>
 
 // / {
@@ -176,10 +176,10 @@
         default_mac_layer {
             label = "MAC";
             bindings = <
-&kp ESCAPE      &kp N1               &kp N2           &kp N3           &kp N4                   &kp N5            &kp N6       &kp N7                           &kp N8            &kp N9            &kp N0                          &kp DE_SQT
-&kp TAB         &kp Q                &kp W            &kp E            &kp R                    &kp T             &kp DE_Z     &kp U                            &kp I             &kp O             &kp P                           &kp DE_U_UMLAUT
-&kp DELETE      &hml LEFT_CONTROL A  &hml LEFT_ALT S  &hml LEFT_GUI D  &hml LEFT_SHIFT F        &kp G             &kp H        &hmr RIGHT_SHIFT J               &hmr RIGHT_GUI K  &hmr RIGHT_ALT L  &hmr RIGHT_CONTROL DE_O_UMLAUT  &kp DE_A_UMLAUT
-&kp LEFT_SHIFT  &lt 6 DE_Y           &kp X            &kp C            &kp V                    &kp B             &kp N        &kp M                            &kp DE_COMMA      &kp DE_PERIOD     &lt 6 DE_MINUS                  &kp RSHIFT
+&kp ESCAPE      &kp N1               &kp N2           &kp N3           &kp N4                   &kp N5            &kp N6       &kp N7                           &kp N8            &kp N9            &kp N0                          &kp MINUS
+&kp TAB         &kp Q                &kp W            &kp E            &kp R                    &kp T             &kp Y        &kp U                            &kp I             &kp O             &kp P                           &kp BSLH
+&kp DELETE      &hml LEFT_CONTROL A  &hml LEFT_ALT S  &hml LEFT_GUI D  &hml LEFT_SHIFT F        &kp G             &kp H        &hmr RIGHT_SHIFT J               &hmr RIGHT_GUI K  &hmr RIGHT_ALT L  &hmr RIGHT_CONTROL SEMI         &kp SQT
+&kp LSHIFT      &lt 6 Z              &kp X            &kp C            &kp V                    &kp B             &kp N        &kp M                            &kp COMMA         &kp DOT           &lt 6 SLASH                     &kp RSHIFT
                                                       &lt 1 TAB        &hml LG(LEFT_ALT) SPACE  &lt 2 LEFT_GUI    &lt 1 ENTER  &hmr LA(LC(LEFT_GUI)) BACKSPACE
                                                                        &mkp RCLK                &mkp LCLK         &mo 2
             >;
@@ -188,23 +188,23 @@
         mac_raise_layer {
             label = "MAC-NUM";
             bindings = <
-&trans                        &trans                &trans                    &trans                    &trans                          &trans            &trans               &trans                  &trans                          &trans                           &trans                         &trans
-&kp DE_LESS_THAN              &kp DE_EXCLAMATION    &kp DE_DOUBLE_QUOTES      &hml DE_HASH DE_ASTERISK  &hml DE_CENT DE_C_CEDILLA       &kp DE_PERCENT    &hmr DE_NOT DE_AMPS  &hmr DE_SLASH DE_N7     &hmr DE_LEFT_PARENTHESIS DE_N8  &hmr DE_RIGHT_PARENTHESIS DE_N9  &hmr DE_ACUTE DE_SINGLE_QUOTE  &hmr DE_GRAVE DE_QUESTION
-&hml DE_POUND_SIGN DE_DOLLAR  &hml LEFT_CONTROL N1  &hml LEFT_ALT DE_SECTION  &hml LEFT_GUI DE_EQUAL    &hml LEFT_SHIFT LS(DE_SECTION)  &kp LA(N)         &kp DE_PLUS          &hmr RIGHT_SHIFT DE_N4  &hmr RIGHT_GUI DE_N5            &hmr RIGHT_ALT DE_N6             &hmr RIGHT_CONTROL LA(RETURN)  &hmr DE_BROKEN_BAR DE_PIPE
-&kp DE_CARET                  &trans                &kp DE_AT                 &hml LA(DE_N8) LA(DE_N5)  &hml LA(DE_N9) LA(DE_N6)        &kp DE_UMLAUT     &kp DE_MINUS         &kp DE_N1               &kp DE_N2                       &kp DE_N3                        &kp LA(DE_DOT)                 &kp LA(LS(NUMBER_7))
-                                                                              &trans                    &kp BACKSPACE                   &trans            &trans               &kp DE_N0
-                                                                                                        &trans                          &trans            &trans
+&trans                     &trans                &trans                    &trans                    &trans                  &trans        &trans                 &trans               &trans                          &trans                &trans                         &trans
+&kp LS(COMMA)              &kp LS(N1)            &kp LS(SQT)               &hml LS(N3) LS(N8)     &hml LS(N4) C              &kp LS(N5)    &hmr LS(GRAVE) LS(N7)  &hmr SLASH N7        &hmr LS(N9) N8                  &hmr LS(N0) N9        &hmr GRAVE SQT                 &hmr GRAVE LS(SLASH)
+&hml LS(N3) LS(N4)         &hml LEFT_CONTROL N1  &hml LEFT_ALT GRAVE       &hml LEFT_GUI EQUAL    &hml LEFT_SHIFT LS(GRAVE)  &kp LA(N)     &kp LS(EQUAL)          &hmr RIGHT_SHIFT N4  &hmr RIGHT_GUI N5               &hmr RIGHT_ALT N6     &hmr RIGHT_CONTROL LA(RETURN)  &hmr LS(BSLH) LS(BSLH)
+&kp LS(N6)                 &trans                &kp LS(N2)                &hml LA(N8) LA(N5)     &hml LA(N9) LA(N6)         &kp LS(SQT)   &kp MINUS              &kp N1               &kp N2                          &kp N3                &kp LA(DOT)                    &kp LA(LS(N7))
+                                                                           &trans                 &kp BACKSPACE              &trans        &trans                 &kp N0
+                                                                                                  &trans                     &trans        &trans
             >;
         };
 
         mac_lower_layer {
             label = "MAC-NAV";
             bindings = <
-&kp F1      &kp F2    &kp F3         &kp F4          &kp F5            &kp F6        &kp F7        &kp F8                &kp F9          &kp F10        &kp F11          &kp F12
-&kp ESCAPE  &trans    &trans         &trans          &trans            &trans        &kp DE_EQUAL  &kp DE_LEFT_BRACKET  &trans          &kp DE_RIGHT_BRACKET  &trans          &trans
-&trans      &kp HOME  &kp PAGE_UP    &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT    &kp DE_MINUS  &kp LEFT_ARROW        &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp F12
-&trans      &kp END   &kp PAGE_DOWN  &trans          &trans            &trans        &trans  &trans                &trans          &trans        &trans           &trans
-                                     &trans          &trans            &trans        &trans  &kp LS(LG(NUMBER_5))
+&kp F12     &kp F1    &kp F2         &kp F3          &kp F4            &kp F5        &kp F6        &kp F7                &kp F8          &kp F9             &kp F10          &kp F11
+&kp ESCAPE  &trans    &trans         &trans          &trans            &trans        &kp EQUAL     &kp LBKT              &trans          &kp RBKT           &trans           &trans
+&trans      &kp HOME  &kp PAGE_UP    &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT    &kp MINUS     &kp LEFT_ARROW        &kp DOWN_ARROW  &kp UP_ARROW       &kp RIGHT_ARROW  &kp F12
+&trans      &kp END   &kp PAGE_DOWN  &trans          &trans            &trans        &trans        &trans                &trans          &trans             &trans           &trans
+                                     &trans          &trans            &trans        &trans        &kp LS(LG(N5))
                                                      &trans            &trans        &trans
             >;
         };
@@ -212,35 +212,35 @@
         default_game_layer {
             label = "GAME";
             bindings = <
-&kp ESCAPE  &kp DE_SECTION                  &kp N1           &kp N2           &kp N3             &hml N5 N4        &kp N6       &kp N7              &kp N8                   &kp N9                    &kp N0                          &kp DE_SQT
-&kp T       &kp TAB                         &kp Q            &kp W            &kp E              &hml T R          &kp DE_Z     &kp U               &kp I                    &kp O                     &kp P                           &kp DE_U_UMLAUT
-&kp G       &kp LEFT_SHIFT                  &kp A            &kp S            &kp D              &hml G F          &kp H        &hmr RIGHT_SHIFT J  &hmr RIGHT_GUI K         &hmr RIGHT_ALT L          &hmr RIGHT_CONTROL DE_O_UMLAUT  &kp DE_A_UMLAUT
-&kp B       &hml LEFT_CONTROL DE_LESS_THAN  &hml LEFT_ALT Y  &hml LEFT_GUI X  &hml LEFT_SHIFT C  &hml B V          &kp N        &hmr RIGHT_SHIFT M  &hmr RIGHT_GUI DE_COMMA  &hmr RIGHT_ALT DE_PERIOD  &lt 6 DE_MINUS                  &hmr DELETE RIGHT_SHIFT
-                                                             &lt 4 TAB        &kp SPACE          &lt 5 LEFT_GUI    &lt 4 ENTER  &kp BACKSPACE
-                                                                              &mkp RCLK          &mkp LCLK         &mo 5
+&kp ESCAPE  &kp GRAVE                    &kp N1           &kp N2           &kp N3             &hml N5 N4        &kp N6       &kp N7              &kp N8                   &kp N9                    &kp N0                       &kp MINUS
+&kp T       &kp TAB                      &kp Q            &kp W            &kp E              &hml T R          &kp Y        &kp U               &kp I                    &kp O                     &kp P                        &kp BSLH
+&kp G       &kp LEFT_SHIFT               &kp A            &kp S            &kp D              &hml G F          &kp H        &hmr RIGHT_SHIFT J  &hmr RIGHT_GUI K         &hmr RIGHT_ALT L          &hmr RIGHT_CONTROL SEMI      &kp SQT
+&kp B       &hml LEFT_CONTROL LS(COMMA)  &hml LEFT_ALT Y  &hml LEFT_GUI X  &hml LEFT_SHIFT C  &hml B V          &kp N        &hmr RIGHT_SHIFT M  &hmr RIGHT_GUI COMMA     &hmr RIGHT_ALT DOT        &lt 6 MINUS                  &hmr DELETE RIGHT_SHIFT
+                                                          &lt 4 TAB        &kp SPACE          &lt 5 LEFT_GUI    &lt 4 ENTER  &kp BACKSPACE
+                                                                           &mkp RCLK          &mkp LCLK         &mo 5
             >;
         };
 
         game_raise_layer {
             label = "GAME-NUM";
             bindings = <
-&trans                        &trans                &trans                      &trans                              &trans                                &trans            &trans               &trans                  &trans                          &trans                           &trans                         &trans
-&kp DE_SECTION                &kp DE_EXCLAMATION    &kp DE_DOUBLE_QUOTES        &hml DE_HASH DE_ASTERISK            &hml DE_CENT DE_C_CEDILLA             &kp DE_PERCENT    &hmr DE_NOT DE_AMPS  &hmr DE_SLASH DE_N7     &hmr DE_LEFT_PARENTHESIS DE_N8  &hmr DE_RIGHT_PARENTHESIS DE_N9  &hmr DE_ACUTE DE_SINGLE_QUOTE  &hmr DE_GRAVE DE_QUESTION
-&hml DE_POUND_SIGN DE_DOLLAR  &hml LEFT_CONTROL N1  &hml LEFT_ALT DE_LESS_THAN  &hml LEFT_GUI DE_EQUAL              &hml LEFT_SHIFT DE_GREATER_THAN       &kp DE_TILDE      &kp DE_PLUS          &hmr RIGHT_SHIFT DE_N4  &hmr RIGHT_GUI DE_N5            &hmr RIGHT_ALT DE_N6             &hmr RIGHT_CONTROL ENTER       &hmr DE_BROKEN_BAR DE_PIPE
-&kp DE_CARET                  &trans                &kp DE_AT                   &hml DE_LEFT_BRACKET DE_LEFT_BRACE  &hml DE_RIGHT_BRACKET DE_RIGHT_BRACE  &kp DE_UMLAUT     &kp DE_MINUS         &kp DE_N1               &kp DE_N2                       &kp DE_N3                        &kp DE_PERIOD                  &kp DE_BACKSLASH
-                                                                                &trans                              &kp BACKSPACE                         &trans            &trans               &kp DE_N0
-                                                                                                                    &trans                                &trans            &trans
+&trans                &trans                &trans                      &trans                    &trans                            &trans            &trans                 &trans                  &trans                  &trans                   &trans                       &trans
+&kp GRAVE             &kp LS(N1)            &kp LS(SQT)                 &hml LS(N3) LS(N8)        &hml LS(N4) C                     &kp LS(N5)        &hmr LS(GRAVE) LS(N7)  &hmr SLASH N7           &hmr LS(N9) N8          &hmr LS(N0) N9           &hmr GRAVE SQT               &hmr GRAVE LS(SLASH)
+&hml LS(N3) LS(N4)    &hml LEFT_CONTROL N1  &hml LEFT_ALT LS(COMMA)     &hml LEFT_GUI EQUAL       &hml LEFT_SHIFT LS(DOT)           &kp LS(GRAVE)     &kp LS(EQUAL)          &hmr RIGHT_SHIFT N4     &hmr RIGHT_GUI N5       &hmr RIGHT_ALT N6        &hmr RIGHT_CONTROL ENTER     &hmr LS(BSLH) LS(BSLH)
+&kp LS(N6)            &trans                &kp LS(N2)                  &hml LBKT LS(LBKT)        &hml RBKT LS(RBKT)                &kp LS(SQT)       &kp MINUS              &kp N1                  &kp N2                  &kp N3                   &kp DOT                      &kp BSLH
+                                                                        &trans                    &kp BACKSPACE                     &trans            &trans                 &kp N0
+                                                                                                  &trans                            &trans            &trans
             >;
         };
 
         game_lower_layer {
             label = "GAME-NAV";
             bindings = <
-&kp F1      &kp F2    &kp F3         &kp F4          &kp F5            &kp F6        &kp F7        &kp F8           &kp F9          &kp F10        &kp F11          &kp F12
-&kp ESCAPE  &trans    &trans         &trans          &trans            &trans        &kp DE_EQUAL  &kp DE_LEFT_BRACKET  &trans          &kp DE_RIGHT_BRACKET  &trans          &trans
-&trans      &kp HOME  &kp PAGE_UP    &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT    &kp DE_MINUS  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp F12
-&trans      &kp END   &kp PAGE_DOWN  &trans          &trans            &trans        &trans  &trans           &trans          &trans        &trans           &trans
-                                     &trans          &trans            &trans        &trans  &kp PRINTSCREEN
+&kp F12     &kp F1    &kp F2         &kp F3          &kp F4            &kp F5        &kp F6     &kp F7           &kp F8          &kp F9         &kp F10          &kp F11
+&kp ESCAPE  &trans    &trans         &trans          &trans            &trans        &kp EQUAL  &kp LBKT         &trans          &kp RBKT       &trans           &trans
+&trans      &kp HOME  &kp PAGE_UP    &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT    &kp MINUS  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &kp F12
+&trans      &kp END   &kp PAGE_DOWN  &trans          &trans            &trans        &trans     &trans           &trans          &trans         &trans           &trans
+                                     &trans          &trans            &trans        &trans     &kp PRINTSCREEN
                                                      &trans            &trans        &trans
             >;
         };
