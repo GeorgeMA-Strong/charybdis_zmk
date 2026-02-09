@@ -3,7 +3,7 @@
 ## Intro
 
 This repository offers pre-configured ZMK firmware designed for Wireless Charybdis keyboards, supporting both the ubiquitous QWERTY layout and the optimized Colemak DH layout. You can choose from two configurations:
-
+This specific repo had adjusted keymappings for Charybdis from Aliexpress (Z&W Charybdis MK1)
 - Bluetooth and USB
 - Dongle
 

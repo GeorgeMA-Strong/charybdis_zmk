@@ -25,7 +25,7 @@ layers:
   - O
   - P
   - \
-  - DELETE
+  - '`'
   - {t: A, h: LEFT CONTROL}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LEFT GUI}
@@ -39,7 +39,7 @@ layers:
   - ''''
   - LSHIFT
   - {t: Z, h: SCROLL}
-  - X
+  - {t: X, h: SNIPER}
   - C
   - V
   - B
@@ -167,7 +167,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - Sft+Gui+ 5
+  - DELETE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -438,7 +438,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

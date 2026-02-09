@@ -50,7 +50,7 @@
         x-input-code = <INPUT_REL_MISC>;
         y-input-code = <INPUT_REL_WHEEL>;
         y-invert;
-        bindings = <&ib_wheel_scaler 1 40>;
+        bindings = <&ib_wheel_scaler 1 60>;
     };
 
     /* define a resolution down scaler only for INPUT_REL_WHEEL */
@@ -178,8 +178,8 @@
             bindings = <
 &kp ESCAPE      &kp N1               &kp N2           &kp N3           &kp N4                   &kp N5            &kp N6       &kp N7                           &kp N8            &kp N9            &kp N0                          &kp MINUS
 &kp TAB         &kp Q                &kp W            &kp E            &kp R                    &kp T             &kp Y        &kp U                            &kp I             &kp O             &kp P                           &kp BSLH
-&kp DELETE      &hml LEFT_CONTROL A  &hml LEFT_ALT S  &hml LEFT_GUI D  &hml LEFT_SHIFT F        &kp G             &kp H        &hmr RIGHT_SHIFT J               &hmr RIGHT_GUI K  &hmr RIGHT_ALT L  &hmr RIGHT_CONTROL SEMI         &kp SQT
-&kp LSHIFT      &lt 6 Z              &kp X            &kp C            &kp V                    &kp B             &kp N        &kp M                            &kp COMMA         &kp DOT           &lt 6 SLASH                     &kp RSHIFT
+&kp GRAVE       &hml LEFT_CONTROL A  &hml LEFT_ALT S  &hml LEFT_GUI D  &hml LEFT_SHIFT F        &kp G             &kp H        &hmr RIGHT_SHIFT J               &hmr RIGHT_GUI K  &hmr RIGHT_ALT L  &hmr RIGHT_CONTROL SEMI         &kp SQT
+&kp LSHIFT      &lt 6 Z              &lt 7 X          &kp C            &kp V                    &kp B             &kp N        &kp M                            &kp COMMA         &kp DOT           &lt 6 SLASH                     &kp RSHIFT
                                                       &lt 1 TAB        &hml LG(LEFT_ALT) SPACE  &lt 2 LEFT_GUI    &lt 1 ENTER  &hmr LA(LC(LEFT_GUI)) BACKSPACE
                                                                        &mkp RCLK                &mkp LCLK         &mo 2
             >;
@@ -188,7 +188,7 @@
         mac_raise_layer {
             label = "MAC-NUM";
             bindings = <
-&trans                     &trans                &trans                    &trans                    &trans                  &trans        &trans                 &trans               &trans                          &trans                &trans                         &trans
+&trans                     &trans                &trans                    &trans                 &trans                     &trans        &trans                 &trans               &trans                          &trans                &trans                         &trans
 &kp LS(COMMA)              &kp LS(N1)            &kp LS(SQT)               &hml LS(N3) LS(N8)     &hml LS(N4) C              &kp LS(N5)    &hmr LS(GRAVE) LS(N7)  &hmr SLASH N7        &hmr LS(N9) N8                  &hmr LS(N0) N9        &hmr GRAVE SQT                 &hmr GRAVE LS(SLASH)
 &hml LS(N3) LS(N4)         &hml LEFT_CONTROL N1  &hml LEFT_ALT GRAVE       &hml LEFT_GUI EQUAL    &hml LEFT_SHIFT LS(GRAVE)  &kp LA(N)     &kp LS(EQUAL)          &hmr RIGHT_SHIFT N4  &hmr RIGHT_GUI N5               &hmr RIGHT_ALT N6     &hmr RIGHT_CONTROL LA(RETURN)  &hmr LS(BSLH) LS(BSLH)
 &kp LS(N6)                 &trans                &kp LS(N2)                &hml LA(N8) LA(N5)     &hml LA(N9) LA(N6)         &kp LS(SQT)   &kp MINUS              &kp N1               &kp N2                          &kp N3                &kp LA(DOT)                    &kp LA(LS(N7))
@@ -204,7 +204,7 @@
 &kp ESCAPE  &trans    &trans         &trans          &trans            &trans        &kp EQUAL     &kp LBKT              &trans          &kp RBKT           &trans           &trans
 &trans      &kp HOME  &kp PAGE_UP    &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT    &kp MINUS     &kp LEFT_ARROW        &kp DOWN_ARROW  &kp UP_ARROW       &kp RIGHT_ARROW  &kp F12
 &trans      &kp END   &kp PAGE_DOWN  &trans          &trans            &trans        &trans        &trans                &trans          &trans             &trans           &trans
-                                     &trans          &trans            &trans        &trans        &kp LS(LG(N5))
+                                     &trans          &trans            &trans        &trans        &kp DELETE
                                                      &trans            &trans        &trans
             >;
         };
