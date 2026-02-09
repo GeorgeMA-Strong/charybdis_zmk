@@ -200,9 +200,9 @@
         mac_lower_layer {
             label = "MAC-NAV";
             bindings = <
-&trans      &trans    &trans         &trans          &trans            &trans        &trans  &trans                &trans          &trans        &trans           &trans
-&kp ESCAPE  &kt F1    &kp F2         &kp F3          &kp F4            &kp F5        &kp F6  &kp F7                &kp F8          &kp F9        &kp F10          &kp F11
-&trans      &kp HOME  &kp PAGE_UP    &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT    &trans  &kp LEFT_ARROW        &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp F12
+&kp F1      &kp F2    &kp F3         &kp F4          &kp F5            &kp F6        &kp F7        &kp F8                &kp F9          &kp F10        &kp F11          &kp F12
+&kp ESCAPE  &trans    &trans         &trans          &trans            &trans        &kp DE_EQUAL  &kp DE_LEFT_BRACKET  &trans          &kp DE_RIGHT_BRACKET  &trans          &trans
+&trans      &kp HOME  &kp PAGE_UP    &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT    &kp DE_MINUS  &kp LEFT_ARROW        &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp F12
 &trans      &kp END   &kp PAGE_DOWN  &trans          &trans            &trans        &trans  &trans                &trans          &trans        &trans           &trans
                                      &trans          &trans            &trans        &trans  &kp LS(LG(NUMBER_5))
                                                      &trans            &trans        &trans
@@ -236,9 +236,9 @@
         game_lower_layer {
             label = "GAME-NAV";
             bindings = <
-&trans      &trans    &trans         &trans          &trans            &trans        &trans  &trans           &trans          &trans        &trans           &trans
-&kp ESCAPE  &kt F1    &kp F2         &kp F3          &kp F4            &kp F5        &kp F6  &kp F7           &kp F8          &kp F9        &kp F10          &kp F11
-&trans      &kp HOME  &kp PAGE_UP    &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT    &trans  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp F12
+&kp F1      &kp F2    &kp F3         &kp F4          &kp F5            &kp F6        &kp F7        &kp F8           &kp F9          &kp F10        &kp F11          &kp F12
+&kp ESCAPE  &trans    &trans         &trans          &trans            &trans        &kp DE_EQUAL  &kp DE_LEFT_BRACKET  &trans          &kp DE_RIGHT_BRACKET  &trans          &trans
+&trans      &kp HOME  &kp PAGE_UP    &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT    &kp DE_MINUS  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp F12
 &trans      &kp END   &kp PAGE_DOWN  &trans          &trans            &trans        &trans  &trans           &trans          &trans        &trans           &trans
                                      &trans          &trans            &trans        &trans  &kp PRINTSCREEN
                                                      &trans            &trans        &trans
