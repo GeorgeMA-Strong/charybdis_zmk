@@ -52,11 +52,11 @@ layers:
   - {t: TAB, h: MAC-NUM}
   - SPACE
   - MAC-NAV
-  - MAC-NUM
+  - {t: ENTER, h: MAC-NAV}
   - BACK SPACE
   - R CLK
   - L CLK
-  - {t: ENTER, h: MAC-NAV}
+  - MAC-NUM
   MAC-NUM:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -167,7 +167,7 @@ layers:
   - SPACE
   - {type: held}
   - {t: ▽, type: trans}
-  - DELETE
+  - AC BACK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
