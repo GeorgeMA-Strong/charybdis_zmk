@@ -50,13 +50,13 @@ layers:
   - {t: /, h: SCROLL}
   - RSHIFT
   - {t: TAB, h: MAC-NUM}
-  - {t: SPACE, h: Gui+ LEFT ALT}
-  - {t: LEFT GUI, h: MAC-NAV}
-  - {t: ENTER, h: MAC-NUM}
-  - {t: BACK SPACE, h: Alt+Ctl+ LEFT GUI}
+  - SPACE
+  - MAC-NAV
+  - MAC-NUM
+  - BACK SPACE
   - R CLK
   - L CLK
-  - MAC-NAV
+  - {t: ENTER, h: MAC-NAV}
   MAC-NUM:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -128,11 +128,11 @@ layers:
   - F10
   - F11
   - ESCAPE
+  - HOME
+  - PAGE UP
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - VOL UP
+  - NEXT
   - '='
   - '['
   - {t: ▽, type: trans}
@@ -140,31 +140,31 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - HOME
-  - PAGE UP
-  - PREVIOUS
+  - LEFT CONTROL
+  - LEFT ALT
+  - LEFT GUI
+  - LEFT SHIFT
   - PLAY PAUSE
-  - NEXT
   - '-'
   - LEFT
   - DOWN ARROW
   - UP ARROW
   - RIGHT
   - DEV TOOLS
-  - {t: ▽, type: trans}
+  - LSHIFT
   - END
   - PAGE DOWN
   - {t: ▽, type: trans}
+  - VOL DN
+  - PREVIOUS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - RSHIFT
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - SPACE
   - {type: held}
   - {t: ▽, type: trans}
   - DELETE
@@ -299,11 +299,11 @@ layers:
   - F10
   - F11
   - ESCAPE
+  - HOME
+  - PAGE UP
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - VOL UP
+  - NEXT
   - '='
   - '['
   - {t: ▽, type: trans}
@@ -311,34 +311,34 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - HOME
-  - PAGE UP
-  - PREVIOUS
+  - LEFT CONTROL
+  - LEFT ALT
+  - LEFT GUI
+  - LEFT SHIFT
   - PLAY PAUSE
-  - NEXT
   - '-'
   - LEFT
   - DOWN ARROW
   - UP ARROW
   - RIGHT
   - DEV TOOLS
-  - {t: ▽, type: trans}
+  - LSHIFT
   - END
   - PAGE DOWN
   - {t: ▽, type: trans}
+  - VOL DN
+  - PREVIOUS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - RSHIFT
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - SPACE
   - {type: held}
   - {t: ▽, type: trans}
-  - PRINT SCREEN
+  - DELETE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
