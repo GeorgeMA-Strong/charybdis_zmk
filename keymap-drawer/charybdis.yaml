@@ -166,8 +166,8 @@ layers:
   - {t: ▽, type: trans}
   - SPACE
   - {type: held}
-  - {t: ▽, type: trans}
-  - AC BACK
+  - Gui+ ]
+  - Gui+ [
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
