@@ -39,24 +39,24 @@ layers:
   - ''''
   - LSHIFT
   - {t: Z, h: SCROLL}
-  - {t: X, h: SNIPER}
+  - {t: X, h: HSCROLL}
   - C
   - V
   - B
   - N
   - M
   - ','
-  - .
+  - {t: ., h: HSCROLL}
   - {t: /, h: SCROLL}
   - RSHIFT
-  - {t: TAB, h: MAC-NUM}
+  - MAC-NUM
   - SPACE
   - MAC-NAV
   - {t: ENTER, h: MAC-NAV}
   - BACK SPACE
   - R CLK
   - L CLK
-  - MAC-NUM
+  - MAC-NAV
   MAC-NUM:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -438,7 +438,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -513,6 +513,63 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  HSCROLL:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [50, 51]
   k: {t: MAC, h: toggle}
@@ -523,8 +580,6 @@ combos:
 - p: [41, 42]
   k: {t: FN, h: toggle}
   l: [MAC, GAME]
-- p: [31, 28]
-  k: CAPS WORD
 - p: [43, 44]
   k: L CLK
 - p: [44, 45]
@@ -537,5 +592,3 @@ combos:
   k: R CLK
 - p: [38, 39, 40]
   k: M CLK
-- p: [24, 25]
-  k: CAPSLOCK
