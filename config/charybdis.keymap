@@ -208,7 +208,7 @@
 &kp LS(COMMA)              &kp LS(N1)            &kp LS(SQT)               &hml LS(N3) LS(N8)     &hml LS(N4) C              &kp LS(N5)    &hmr LS(GRAVE) LS(N7)  &hmr SLASH N7        &hmr LS(N9) N8                  &hmr LS(N0) N9        &hmr GRAVE SQT                 &hmr GRAVE LS(SLASH)
 &hml LS(N3) LS(N4)         &hml LEFT_CONTROL N1  &hml LEFT_ALT GRAVE       &hml LEFT_GUI EQUAL    &hml LEFT_SHIFT LS(GRAVE)  &kp LA(N)     &kp LS(EQUAL)          &hmr RIGHT_SHIFT N4  &hmr RIGHT_GUI N5               &hmr RIGHT_ALT N6     &hmr RIGHT_CONTROL LA(RETURN)  &hmr LS(BSLH) LS(BSLH)
 &kp LS(N6)                 &trans                &kp LS(N2)                &hml LA(N8) LA(N5)     &hml LA(N9) LA(N6)         &kp LS(SQT)   &kp MINUS              &kp N1               &kp N2                          &kp N3                &kp LA(DOT)                    &kp LA(LS(N7))
-                                                                           &trans                 &kp BACKSPACE              &trans        &trans                 &kp N0
+                                                                           &trans                 &kp SPACE.                 &trans        &trans                 &kp BACKSPACE
                                                                                                   &trans                     &trans        &trans
             >;
         };
