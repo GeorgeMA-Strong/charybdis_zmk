@@ -107,10 +107,10 @@ layers:
   - Alt+ .
   - Alt+Sft+ 7
   - {type: held}
+  - SPACE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - BACK SPACE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
